@@ -1,1 +1,31 @@
+body{
+	text-align: center;
+	margin: 0;
+}
+button{
+	font-size: 50px;
+}
 
+p#evenNum{
+	width: 100px;
+	margin: 0px auto;
+	background-color: black;
+	color: white;
+	font-size: 50px;
+}
+
+p#oddNum{
+	width: 100px;
+	margin: 0px auto;
+	background-color: red;
+	color: white;
+	font-size: 50px;
+}
+
+p#zero{
+	width: 100px;
+	margin: 0px auto;
+	background-color: green;
+	color: white;
+	font-size: 50px;
+}

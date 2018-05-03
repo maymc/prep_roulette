@@ -13,4 +13,44 @@ A random number will be generated every 5 seconds.*/
 // 1) Add some additional styling to your application.
 // 2) Create on and off buttons that will start and stop your application.
 
+var x;
 
+function spinWheel(){
+
+	console.log("start");
+
+	var num = Math.floor(Math.random()*36);
+
+	var even = document.getElementById("evenNum");
+	var odd = document.getElementById("oddNum");
+	var zero = document.getElementById("zeroNum");
+
+	if(num %2 === 0 && num !== 0){
+		even.innerHTML = num;
+	}
+	else if(num%2 !== 0){
+		odd.innerHTML = num;
+	}
+	else if(num === 0){
+		zero.innerHTML = num;
+	}
+
+	x = setTimeout(function(){ spinWheel()}, 5000);
+};
+
+function startSpin(){
+	spinWheel();
+}
+
+function stopSpin(){
+	console.log("stop");
+	clearTimeout(x);
+}
+
+
+// function randomNum(){
+// 	var num = Math.floor(Math.random()*36);
+// 	return num;
+// }
+
+// console.log(randomNum());

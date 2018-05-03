@@ -1,1 +1,32 @@
+body {
+	text-align: center;
+	margin: 0;
+}
 
+button {
+	font-size: 40px;
+}
+
+#evenNum {
+	display: inline-block;
+	background-color: black;
+	color: white;
+	font-size: 50px;
+	padding: 50px;
+}
+
+#oddNum {
+	display: inline-block;
+	background-color: red;
+	color: white;
+	font-size: 50px;
+	padding: 50px;
+}
+
+#zeroNum {
+	display: inline-block;
+	background-color: green;
+	color: white;
+	font-size: 50px;
+	padding: 50px;
+}
